@@ -1,7 +1,12 @@
+import controller.LoginScreenController;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
+import service.AssetsHandler;
+import service.BookHandler;
+import service.StaffHandler;
+import view.LoginScreenUI;
 
 public class MainFX extends Application {
 

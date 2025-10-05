@@ -1,3 +1,5 @@
+package model;
+
 public class OnlineBook extends Book {
 
     private final int fileSize;

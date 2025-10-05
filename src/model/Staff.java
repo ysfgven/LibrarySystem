@@ -1,3 +1,5 @@
+package model;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -6,7 +8,7 @@ public class Staff {
     private final String staffPassword;
     private static List<Staff> staffList = new ArrayList<>();
 
-    Staff(String staffUserName, String staffPassword) {
+    public Staff(String staffUserName, String staffPassword) {
         this.staffUserName = staffUserName;
         this.staffPassword = staffPassword;
         staffList.add(this);

@@ -1,4 +1,6 @@
-    import javafx.collections.FXCollections;
+package controller;
+
+import javafx.collections.FXCollections;
     import javafx.collections.ObservableList;
     import javafx.scene.Scene;
     import javafx.scene.control.ListView;
@@ -6,6 +8,12 @@
     import javafx.scene.layout.Pane;
     import javafx.scene.layout.VBox;
     import javafx.stage.Stage;
+import model.Book;
+import service.AssetsHandler;
+import service.BookHandler;
+import view.AddNewBookUI;
+import view.BookListUI;
+import view.DetailedBookUI;
 
     import java.util.List;
 
@@ -14,7 +22,7 @@
         private final BookListUI bookListUI;
         private final DetailedBookUI detailedBookUI;
 
-        public BookListController(BookListUI bookListUI,BookHandler bookHandler) {
+        public BookListController(BookListUI bookListUI, BookHandler bookHandler) {
             this.bookHandler = bookHandler;
             this.bookListUI = bookListUI;
             this.detailedBookUI = new DetailedBookUI(bookHandler);

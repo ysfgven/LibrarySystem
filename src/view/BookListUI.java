@@ -1,3 +1,6 @@
+package view;
+
+import controller.BookListController;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.control.SplitPane;
@@ -10,10 +13,10 @@ public class BookListUI {
     private ListView<String> listView;
     private BookListController bookListController;
     private Button refreshButton;
-    private final Button addBookButton = new Button("Add New Book ");
+    private final Button addBookButton = new Button("Add New Book");
 
 
-    BookListUI() {
+    public BookListUI() {
     }
 
     public void bookListUIinit(BookListController controller) {

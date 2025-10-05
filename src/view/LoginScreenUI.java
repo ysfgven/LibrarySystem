@@ -1,9 +1,12 @@
+package view;
+
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
+import service.AssetsHandler;
 
 public class LoginScreenUI {
     private TextField usernameField;
@@ -11,7 +14,7 @@ public class LoginScreenUI {
     private Button loginButton;
     private Pane loginScreenPane;
 
-    LoginScreenUI(){
+    public LoginScreenUI(){
         loginScreenUICreator();
 
     }

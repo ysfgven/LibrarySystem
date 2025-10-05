@@ -1,7 +1,19 @@
+package controller;
+
 import javafx.scene.control.Button;
 import javafx.scene.control.Toggle;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+import model.Book;
+import model.BookType;
+import model.OnlineBook;
+import model.PrintedBook;
+import service.BookHandler;
+import service.ImageManager;
+import util.ErrorHandler;
+import util.LogHelper;
+import view.AddNewBookUI;
+
 import java.io.File;
 
 public class AddNewBookController {

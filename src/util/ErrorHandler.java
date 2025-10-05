@@ -1,8 +1,11 @@
+package util;
+
 import javafx.application.Platform;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
+import service.AssetsHandler;
 
 public class ErrorHandler {
     public static Alert showInfoAlert(String title, String header, String content){

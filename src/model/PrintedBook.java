@@ -1,3 +1,5 @@
+package model;
+
 public class PrintedBook extends Book {
 
     private final String shelfLocation;

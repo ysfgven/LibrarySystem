@@ -1,3 +1,6 @@
+package view;
+
+import controller.AddNewBookController;
 import javafx.scene.control.*;
 import javafx.scene.layout.Pane;
 

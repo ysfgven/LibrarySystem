@@ -1,7 +1,11 @@
+package service;
+
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
+import util.ErrorHandler;
+import util.LogHelper;
 
 import java.io.File;
 import java.io.IOException;

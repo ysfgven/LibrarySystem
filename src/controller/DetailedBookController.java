@@ -1,6 +1,12 @@
+package controller;
+
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 import javafx.stage.Stage;
+import service.AssetsHandler;
+import service.BookHandler;
+import util.ErrorHandler;
+
 import java.util.Optional;
 
 public class DetailedBookController {
@@ -8,7 +14,7 @@ public class DetailedBookController {
 
     private final BookHandler bookHandler;
 
-    DetailedBookController( BookHandler bookHandler) {
+    public DetailedBookController( BookHandler bookHandler) {
         this.bookHandler = bookHandler;
     }
 

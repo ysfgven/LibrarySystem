@@ -1,5 +1,13 @@
-    import javafx.scene.Scene;
-    import javafx.stage.Stage;
+package controller;
+
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+import model.Staff;
+import service.BookHandler;
+import util.ErrorHandler;
+import view.BookListUI;
+import view.LoginScreenUI;
+
     import java.util.List;
 
     public class LoginScreenController {
@@ -10,7 +18,7 @@
         private final Stage stage;
         private final BookHandler bookHandler;
 
-        LoginScreenController(LoginScreenUI ui,Stage stage,BookHandler bookHandler) {
+        public LoginScreenController(LoginScreenUI ui, Stage stage, BookHandler bookHandler) {
             this.ui = ui;
             this.stage = stage;
             this.bookHandler = bookHandler;

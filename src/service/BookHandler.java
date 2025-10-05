@@ -1,3 +1,10 @@
+package service;
+import model.Book;
+import model.BookType;
+import model.OnlineBook;
+import model.PrintedBook;
+import util.ErrorHandler;
+import util.LogHelper;
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;

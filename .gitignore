@@ -1,0 +1,54 @@
+# ----- Java / build / IDE -----
+*.class
+*.jar
+*.war
+*.ear
+
+# Maven / Gradle / build dirs
+/target/
+/build/
+/out/
+/bin/
+/.gradle/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# VS Code
+.vscode/
+
+# ----- OS files -----
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# ----- Keep data, logs, images tracked in repo -----
+# (The following directories are intentionally NOT ignored so they will be included in the repo)
+!data/
+!logs/
+!images/
+
+# ----- Logs & runtime (other files) -----
+# ignore generic log file patterns, but the logs/ folder itself is tracked
+*.log
+
+# ----- Secrets / env -----
+.env
+*.keystore
+*.jks
+
+# ----- Temp / uploads -----
+tmp/
+temp/
+uploads/
+
+# ----- Misc -----
+*~
+*.swp

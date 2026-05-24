@@ -1,0 +1,43 @@
+# ----- Java / build / IDE -----
+*.class
+*.jar
+*.war
+*.ear
+
+# Maven build output
+target/
+build/
+out/
+bin/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# VS Code
+.vscode/
+
+# ----- OS files -----
+.DS_Store
+Thumbs.db
+
+# ----- Secrets -----
+.env
+*.keystore
+*.jks
+src/main/resources/db.properties
+
+# ----- Logs -----
+logs/
+*.log
+
+# ----- Temp -----
+tmp/
+temp/
+uploads/

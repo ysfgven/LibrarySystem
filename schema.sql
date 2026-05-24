@@ -1,0 +1,36 @@
+CREATE DATABASE IF NOT EXISTS library_db
+    CHARACTER SET utf8mb4
+    COLLATE utf8mb4_turkish_ci;
+
+USE library_db;
+
+CREATE TABLE IF NOT EXISTS books (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    type  ENUM('PRINTED', 'ONLINE') NOT NULL,
+    title VARCHAR(255)  NOT NULL,
+    author VARCHAR(255)  NOT NULL,
+    publisher VARCHAR(255)  NOT NULL,
+    isbn VARCHAR(50)   NOT NULL UNIQUE,
+    summary TEXT,
+    created_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS printed_books (
+    id INT PRIMARY KEY,
+    shelf_location  VARCHAR(100) NOT NULL,
+    cover_type VARCHAR(100) NOT NULL,
+    FOREIGN KEY (id) REFERENCES books(id) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS online_books (
+    id INT PRIMARY KEY,
+    file_size INT  NOT NULL,
+    format VARCHAR(50) NOT NULL,
+    FOREIGN KEY (id) REFERENCES books(id) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS staff (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(100) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL
+);
